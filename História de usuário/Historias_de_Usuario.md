@@ -124,7 +124,7 @@ Os cenários abaixo refletem o **Core Business Flow (Caminho Crítico)** prioriz
 * O layout deve exibir o título em destaque: "Thank you for your order!".
 * O botão "Back Home" deve retornar o usuário para a vitrine inicial.
 
-### 🧪 Cenários de Teste (Comportamento - BDD)
+### Cenários de Teste (Comportamento - BDD)
 
 **Cenário: Validar a exatidão dos cálculos no resumo do pedido**
 * **Dado** que o usuário está na página "Checkout: Overview" com produtos que somam $75.97
