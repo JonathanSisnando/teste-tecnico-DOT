@@ -1,0 +1,17 @@
+# dependências
+node_modules/
+.npm
+
+# cypress
+cypress/videos/
+cypress/screenshots/
+cypress-coverage/
+
+# variáveis de ambiente
+.env
+.env.*
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
