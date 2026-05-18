@@ -5,7 +5,7 @@ O objetivo deste repositório é garantir a qualidade e o funcionamento correto 
 
 O projeto foi estruturado focando em escalabilidade, manutenibilidade e na adoção das melhores práticas de arquitetura de testes automatizados.
 
-## 🏗️ Arquitetura e Estrutura do Projeto
+##  Arquitetura e Estrutura do Projeto
 
 O projeto adota o padrão **Page Object Model (POM)** aliado ao uso de **Custom Commands** e **Fixtures**, garantindo que os testes sejam descritivos, limpos e de fácil manutenção.
 
@@ -35,7 +35,7 @@ cypress/
     └── e2e.js               # Arquivo de suporte global do Cypress
 ```
 
-## 🛠️ Boas Práticas Adotadas
+##  Boas Práticas Adotadas
 
 ### 1. Page Object Model (POM)
 A interação com a tela (mapeamento de seletores CSS e ações) foi abstraída para a pasta `cypress/support/pages/`. 
@@ -53,7 +53,7 @@ Os dados de teste (como nomes de usuário, senhas e informações de pagamento) 
 O `baseUrl` da aplicação foi configurado de forma centralizada no arquivo `cypress.config.js`.
 * **Vantagem:** Evita a repetição da URL raiz pelo código. Facilitará bastante caso o projeto precise ser testado em diferentes ambientes (ex: *QA*, *Staging* ou *Produção*), bastando alterar a URL na inicialização.
 
-## 🚀 Como Executar o Projeto
+##  Como Executar o Projeto
 
 ### Pré-requisitos
 - [Node.js](https://nodejs.org/) instalado na máquina.
