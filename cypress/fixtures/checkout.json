@@ -1,0 +1,17 @@
+{
+  "valid_data": {
+    "firstName": "Jonathan",
+    "lastName": "QA",
+    "postalCode": "69000000"
+  },
+  "missing_postal_code": {
+    "firstName": "Jonathan",
+    "lastName": "QA",
+    "postalCode": ""
+  },
+  "missing_first_name": {
+    "firstName": "",
+    "lastName": "QA",
+    "postalCode": "69000000"
+  }
+}
