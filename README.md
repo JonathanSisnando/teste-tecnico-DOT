@@ -34,7 +34,10 @@ O projeto adota o padrão Page Object Model (POM) aliado ao uso de Custom Comman
 A estrutura de pastas principal está organizada da seguinte forma:
 
 ```text
-cypress/
+História de usuário/         # Documentação ágil (Histórias de Usuário, BDDs e Critérios de Aceite)
+testPlan/                    # Plano estratégico de testes e mapeamento da cobertura
+
+cypress/                     # Diretório principal do framework de automação
 ├── e2e/                     # Arquivos de especificações (Testes E2E agrupados por contexto)
 │   ├── carrinho.cy.js       # Testes do carrinho de compras
 │   ├── checkout_dados.cy.js # Testes do formulário de checkout
