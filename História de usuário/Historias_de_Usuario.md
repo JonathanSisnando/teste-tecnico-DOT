@@ -1,4 +1,4 @@
-# 📖 Histórias de Usuário e BDD - SauceDemo
+# Histórias de Usuário e BDD - SauceDemo
 
 Este documento detalha as Histórias de Usuário, Critérios de Aceite e Cenários BDD que serviram como base para o desenvolvimento da automação E2E descrita no `README.md` principal do projeto. 
 
@@ -6,13 +6,13 @@ Os cenários abaixo refletem o **Core Business Flow (Caminho Crítico)** prioriz
 
 ---
 
-## 🔐 História 1: Autenticação de Usuário (Login)
+## História 1: Autenticação de Usuário (Login)
 
 > **Como** visitante da plataforma Swag Labs  
 > **Quero** inserir minhas credenciais de acesso (usuário e senha)  
 > **Para** autenticar minha sessão e acessar o catálogo de produtos para realizar compras.
 
-### 🎯 Critérios de Aceitação
+### Critérios de Aceitação
 
 **1. Estrutura da Interface de Login**
 * A página inicial (`/` ou `/index.html`) deve exibir o logotipo do Swag Labs.
@@ -32,13 +32,13 @@ Os cenários abaixo refletem o **Core Business Flow (Caminho Crítico)** prioriz
 
 ---
 
-## 🛍️ História 2: Catálogo de Produtos (Vitrine)
+## História 2: Catálogo de Produtos (Vitrine)
 
 > **Como** cliente autenticado no Swag Labs  
 > **Quero** visualizar a lista de produtos disponíveis com seus respectivos detalhes  
 > **Para que** eu possa selecionar os itens de meu interesse e adicioná-los ao carrinho de compras.
 
-### 🎯 Critérios de Aceitação
+### Critérios de Aceitação
 
 **1. Funcionalidade do Botão "Add to cart"**
 * Ao clicar no botão "Add to cart", o item deve ser adicionado à sessão do carrinho.
@@ -49,7 +49,7 @@ Os cenários abaixo refletem o **Core Business Flow (Caminho Crítico)** prioriz
 * O Menu Hambúrguer deve expandir a navegação lateral.
 * O Ícone do Carrinho deve redirecionar o usuário para a página de carrinho (`/cart.html`). Se vazio, não deve exibir a badge numérica vermelha.
 
-### 🧪 Cenários de Teste (Comportamento - BDD)
+### Cenários de Teste (Comportamento - BDD)
 
 **Cenário: Adicionar um produto ao carrinho com sucesso**
 * **Dado** que o usuário está autenticado e acessou a página de produtos (`/inventory.html`)
@@ -65,13 +65,13 @@ Os cenários abaixo refletem o **Core Business Flow (Caminho Crítico)** prioriz
 
 ---
 
-## 🛒 História 3: Gestão do Carrinho de Compras
+## História 3: Gestão do Carrinho de Compras
 
 > **Como** cliente com produtos selecionados  
 > **Quero** visualizar a lista de itens no meu carrinho e poder removê-los  
 > **Para que** eu possa revisar meu pedido antes de seguir para o pagamento.
 
-### 🎯 Critérios de Aceitação
+### Critérios de Aceitação
 
 **1. Estrutura e Navegação**
 * Cada item deve exibir: Quantidade (QTY), Título, Descrição, Preço e Botão "Remove".
@@ -82,7 +82,7 @@ Os cenários abaixo refletem o **Core Business Flow (Caminho Crítico)** prioriz
 * Ao clicar em "Remove", o bloco do item deve ser excluído da tela instantaneamente.
 * O badge numérico do carrinho superior deve decrementar. Se o carrinho esvaziar, a badge deve sumir.
 
-### 🧪 Cenários de Teste (Comportamento - BDD)
+### Cenários de Teste (Comportamento - BDD)
 
 **Cenário: Visualizar produtos adicionados ao carrinho**
 * **Dado** que o usuário adicionou produtos através da vitrine
@@ -102,13 +102,13 @@ Os cenários abaixo refletem o **Core Business Flow (Caminho Crítico)** prioriz
 
 ---
 
-## 💳 História 4: Revisão e Conclusão do Pedido (Checkout)
+## História 4: Revisão e Conclusão do Pedido (Checkout)
 
 > **Como** cliente com os dados de entrega preenchidos  
 > **Quero** revisar os itens do meu carrinho, verificar os valores totais (com taxas) e finalizar a compra  
 > **Para que** eu tenha a garantia de que o pedido está correto e receba a confirmação.
 
-### 🎯 Critérios de Aceitação
+### Critérios de Aceitação
 
 **1. Cálculo do Resumo Financeiro (Price Total)**
 * O sistema deve exibir:
